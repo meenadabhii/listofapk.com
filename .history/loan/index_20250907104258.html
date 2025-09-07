@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOP VIDEOS</title>
     <link rel="stylesheet" href="./style/main.css">
-
-
-
-
+  <base href="/loan/">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&amp;display=swap');
 
@@ -433,6 +428,7 @@
         }
     </style>
 
+
     <style>
         @media only screen and (min-width: 480px) {
             .stickyads_Mobile_Only {
@@ -692,6 +688,8 @@
         }
     </style>
 
+
+
     <link href="../vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
     <script src="../vjs.zencdn.net/7.11.4/video.min.js"></script>
 
@@ -705,6 +703,7 @@
 
 
 </head>
+
 <body>
 
     <div class="video-sticky" id="stickyPlayer" style="display:none;">
@@ -722,7 +721,13 @@
 
         player.ima({
             id: 'content_video',
-            adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/22874608466,23114560535/urbansgraden/urbansgraden.com/IXQ502524V662HD9&description_url=https%3A%2F%2Furbansgraden.com&tfcd=0&npa=0&sz=640x360&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&correlator=' + Date.now()
+            adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?' +
+                'iu=/23315732502/native' +        // ✅ using your native unit
+                '&description_url=' + encodeURIComponent('https://urbansgraden.com') +
+                '&tfcd=0&npa=0&sz=640x360' +      // ✅ force video slot size
+                '&gdfp_req=1&unviewed_position_start=1' +
+                '&output=vast&env=vp&impl=s' +
+                '&correlator=' + Date.now()
         });
 
         player.ready(function () {
@@ -764,18 +769,14 @@
 
 
 
-
-
     <div id='closebtn_Desktop_Only' class='stickyads_Desktop_Only'>
         <div id="div-DStickyAds" style="width:728px; height:90px;"></div>
-
         <button class='btn_Desktop_Only' onclick='change_css_Desktop_Only()'>x</button>
     </div>
 
     <!-- Mobile Sticky -->
     <div id='closebtn_Mobile_Only' class='stickyads_Mobile_Only'>
         <div id="div-MWebStickyAds" style="width:320px; height:50px;"></div>
-
         <button class='btn_Mobile_Only' onclick='change_css_Mobile_Only()'>x</button>
     </div>
 
@@ -802,12 +803,11 @@
             Financial,
             UnitedHealth Group, Zurich Insurance Group, Generali Group</p>
 
-
-        <!-- Display Banner 250x250 -->
         <div id="div-gpt-ad-1" style="min-width:300px; min-height:250px;"></div>
 
 
         <div class="video-row">
+          
             <a href="page/play9.html" class="video-column text-white">
                 <div class="video-wrapper">
                     <video class="video-bg" autoplay muted loop playsinline>
@@ -818,9 +818,6 @@
                     <div class="play-now-btn">Watch</div>
                 </div>
             </a>
-
-
-
 
             <a href="page/play2.html" class="video-column text-white">
                 <div class="video-wrapper">
@@ -850,10 +847,10 @@
         </div>
 
 
+        <div id="div-gpt-ad-2" style="min-width:300px ; min-height:250px;"></div>
 
         <!-- Display Banner 336x280 -->
 
-        <div id="div-gpt-ad-2" style="min-width:300px !important; min-height:250px !important;"></div>
 
         <div class="video-row">
             <a href="page/play4.html" class="video-column text-white">
@@ -889,6 +886,7 @@
 
 
         </div>
+
 
 
         <!-- Display Banner 300x600 -->
@@ -928,9 +926,7 @@
 
         </div>
 
-      <div id="div-gpt-ad-3" style="min-width:300px; min-height:250px;"></div>
-
-
+        <div id="div-MWebStickyAds"></div>
         <div class="article-title">types of lawyers in the world 2025</div>
 
         <div class="paragraph-box">
@@ -955,6 +951,7 @@
             <strong>Role:</strong> Advise companies on mergers, acquisitions, contracts, and compliance.<br /><br />
             <strong>Known for:</strong> Protecting business interests and ensuring legal compliance.
         </div>
+        <div id="div-gpt-ad-3" style="min-width:300px; min-height:250px;"></div>
 
         <div class="paragraph-box">
             <strong>3. Family Lawyers</strong><br />
@@ -1043,6 +1040,7 @@
             A: A corporate lawyer or tax lawyer is best suited for business-related legal matters.<br /><br />
         </div>
 
+        <div id="div-gpt-ad-3"></div>
 
         <div class="article-title">top 10 lawyers in the world 2025</div>
 
@@ -1193,6 +1191,7 @@
             Their expertise, dedication, and landmark cases continue to inspire the legal community worldwide.
         </div>
 
+        <div id="div-gpt-ad-2"></div>
         <div class="paragraph-box">
             <strong>Frequently Asked Questions (FAQs)</strong><br />
             <strong>Q1. Who is the best human rights lawyer in the world in 2025?</strong><br />
@@ -1219,6 +1218,5 @@
 </body>
 
 
-<!-- Mirrored from 101.urbansgraden.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Sep 2025 14:57:23 GMT -->
 
 </html>
